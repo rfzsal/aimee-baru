@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "@react-native-community",
+    "universe/native",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/no-unstable-nested-components": [
+      "off",
+      {
+        "allowAsProps": true
+      }
+    ]
+  },
+  "settings": {
+    "import/ignore": ["react-native"]
+  }
+}
